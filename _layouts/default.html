@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>labisso{% if page.title %}: {{ page.title }} {% endif %} </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David LaBissoniere">
+    <meta name="author" content="David LaBissoniere">
+    <link href="/css/journal-bootstrap.css" rel="stylesheet">
+    <style>
+
+      html, body {
+        height: 100%;
+      }
+
+      #main {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -43px;
+        margin-top: 30px;
+      }
+
+      footer {
+        padding: 0 10px 0 10px;
+        border-top: 1px solid #eee;
+      }
+
+      footer > p {
+        margin-bottom: 11px;
+        margin-top: 13px;
+        font-size: 80%;
+      }
+
+      .push { height: 63px; }
+
+      .carousel-inner { text-align: center; }
+
+      .carousel .item {
+        padding: 12px 12px 30px 12px;
+        border: 1px solid #BFBFBF;
+        background-color: white;
+        -webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+        -moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+        box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+      }
+
+      .carousel .item > img {
+        border: 1px solid #BFBFBF;
+        display: inline-block;
+      }
+
+      .carousel-caption {
+        background: inherit;
+        font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+        color: #333;
+      }
+
+      .carousel-caption p {
+        color: inherit;
+      }
+
+      #mainnav {
+        font-size: 20px;
+        font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      #mainnav > li > a {
+        padding: 10px 10px 10px;
+        color: #000;
+      }
+
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/ico/favicon.ico">
+  </head>
+  <body>
+    <div id="main" class="container">
+      <div class="row">
+        <div class="offset1 span9">
+          {{ content }}
+        </div>
+        <div class="offset1 span1">
+          <h2>labisso<small>.com</small></h2>
+          <div class="nav nav-stacked" id="mainnav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <iframe src="http://ghbtns.com/github-btn.html?user=labisso&type=follow"
+              allowtransparency="true" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
+        </div>
+      </div>
+      <div class="push"><!--//--></div>
+    </div>
+
+    <footer class="container-fluid">
+      <p class="pull-right">
+        Made with <a href="http://www.getbootstrap.com">Bootstrap</a> and
+        <a href="http://jekyllrb.com">Jekyll</a>.
+        Graciously hosted by <a href="http://github.com">Github</a>
+        [<a href="http://github.com/labisso/labisso.github.com">source</a>].
+      </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="/js/bootstrap.js">
+    </script>
+    <script language="javascript">
+      $(function() {
+        $('#serious').carousel({interval: 10000});
+      });
+    </script>
+
+  </body>
+</html>

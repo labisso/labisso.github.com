@@ -1,0 +1,67 @@
+---
+layout: default
+tagline: is serious about software
+
+carousel:
+#  - img: /img/serious/graffiti.jpg
+#    caption: David thinking about
+  - img: /img/serious/street2.jpg
+    caption: David thinking about code
+  - img: /img/serious/eiffel.jpg
+    caption: David thinking about code
+  - img: /img/serious/teylors.jpg
+    caption: David thinking about scientific code
+#  - img: /img/serious/canal.jpg
+#    caption: David thinking about code
+  - img: /img/serious/coffee.jpg
+    caption: David wondering if he should have just used SQL
+  - img: /img/serious/deco.jpg
+    caption: David and Emily after a bitter static typing debate
+  - img: /img/serious/kauai.jpg
+    caption: David thinking about code. Dangerously oblivious.
+  - img: /img/serious/lucerne.jpg
+    caption: David thinking about code
+  - img: /img/serious/eagleandchild.jpg
+    caption: David thinking about beer
+#  - img: /img/serious/edinburgh.jpg
+#    caption: David thinking about code
+#  - img: /img/serious/luzern.jpg
+#    caption: David thinking about code
+#  - img: /img/serious/nevada.jpg
+#    caption: David thinking about code
+#  - img: /img/serious/pint.jpg
+#    caption: David thinking about code
+#  - img: /img/serious/prague.jpg
+#    caption: David thinking about code
+  - img: /img/serious/sad.jpg
+    caption: David wondering why ultimately all software seems to suck
+  - img: /img/serious/ship.jpg
+    caption: David pointing out the race condition
+#  - img: /img/serious/testify.jpg
+#    caption: David thinking about code
+  - img: /img/serious/trex.jpg
+    caption: David thinking about flossing
+  - img: /img/serious/street1.jpg
+    caption: David thinking about code
+#  - img: /img/serious/wheel.jpg
+#    caption: David thinking about code
+---
+
+<h1>David <small>is serious about software</small></h1>
+
+<div id="serious" class="carousel">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    {% for item in page.carousel %}
+    <div class="item{% if forloop.first %} active{% endif %}">
+      <img src="{{ item.img }}">
+      <div class="carousel-caption">
+        <p class="pull-right">{{ item.caption }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#serious" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#serious" data-slide="next">&rsaquo;</a>
+</div>
