@@ -21,11 +21,11 @@ number of projects there including
 [dashi](https://github.com/nimbusproject/dashi), and
 [kazoo](https://github.com/python-zk/kazoo). At Dell I've managed to keep the
 open source spirit alive by helping build and release
-[Blockade](https://github.com/dcm-oss/blockade), a Docker-based network failure
+[Blockade](https://github.com/worstcase/blockade), a Docker-based network failure
 testing tool.
 
 I live in Chicago with my wife [Emily](http://www.theleagueofwhimsy.com)
 although in the past few years I've taken advantage of flexible work policies
-and periodically worked remotely from the Netherlands, Scotland, and Costa Rica
--- so far.
+and periodically worked remotely from the Netherlands, Scotland, Costa Rica,
+Montenegro, and Portugal -- so far.
 
